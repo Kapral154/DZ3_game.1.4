@@ -419,8 +419,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381310242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1881216, y: 0.49539122, z: -0.8957597}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.1881213, y: 0.49539113, z: -0.8957597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fc56c9904f8714db06add832cd7239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 679997030}
+  _target: {fileID: 679997030}
 --- !u!58 &568641035 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 8072006526692087297, guid: 78589f06aa874f84cb647a6275aab669, type: 3}
@@ -5303,6 +5303,6 @@ PrefabInstance:
     - target: {fileID: 5900573107380151607, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
       propertyPath: _patrolPoints
       value: 
-      objectReference: {fileID: 381310244}
+      objectReference: {fileID: 381310243}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
