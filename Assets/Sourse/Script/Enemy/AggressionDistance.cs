@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Aggression : MonoBehaviour
+public class AggressionDistance : MonoBehaviour
 {
     [SerializeField] private TrigerPlayer _player;
-    [SerializeField] private EnemyActiont _enemyActiont;
+    [SerializeField] private BearBehavior _behavior;
 
     private float _distance = 4;
 
@@ -13,11 +13,10 @@ public class Aggression : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, _player.transform.position) < _distance)
         {
-            _enemyActiont.Attack(true);
-        }   
-        else
-        {
-            _enemyActiont.Attack(false);
+            _behavior.EnemyNearby(true);
+            return;
         }
+
+        _behavior.EnemyNearby(false);
     }
 }

@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 5900573107380151600}
   - component: {fileID: 5900573107380151603}
   - component: {fileID: 5900573107380151607}
-  - component: {fileID: 5900573107380151604}
   - component: {fileID: 5900573107380151605}
+  - component: {fileID: 4944678583674599213}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -205,22 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _patrolPoints: {fileID: 0}
-  _player: {fileID: 0}
+  _player: {fileID: 665284315073851881, guid: 78589f06aa874f84cb647a6275aab669, type: 3}
   _animator: {fileID: 5900573107380151603}
---- !u!114 &5900573107380151604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5900573107380151602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf3b1d5be955dae4cbc180f7c3bd8426, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _coin: {fileID: 2894963358165803421, guid: 35851fc819020a9428bb1bbcc603f143, type: 3}
-  _spawnCoins: {fileID: 5900573109240042449}
 --- !u!114 &5900573107380151605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,8 +219,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea100581ab846de478e1cd307a345f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _enemyActiont: {fileID: 5900573107380151607}
+  _player: {fileID: 5167648282170450160, guid: 78589f06aa874f84cb647a6275aab669, type: 3}
+  _behavior: {fileID: 5900573107380151607}
+--- !u!114 &4944678583674599213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900573107380151602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f579404df5799408463c93816302fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coin: {fileID: 2894963358165803421, guid: 35851fc819020a9428bb1bbcc603f143, type: 3}
+  _spawnCoins: {fileID: 5900573109240042449}
 --- !u!1 &5900573107401155924
 GameObject:
   m_ObjectHideFlags: 0

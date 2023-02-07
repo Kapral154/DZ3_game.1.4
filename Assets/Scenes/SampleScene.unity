@@ -292,6 +292,17 @@ PrefabInstance:
       objectReference: {fileID: 1262813026}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+--- !u!114 &307736274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5900573107380151607, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+  m_PrefabInstance: {fileID: 5900573107437311674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e94708f97864d6439f93c76f6d5698c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &329890143
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fc56c9904f8714db06add832cd7239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _triger: {fileID: 679997030}
+  _player: {fileID: 679997030}
 --- !u!58 &568641035 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 8072006526692087297, guid: 78589f06aa874f84cb647a6275aab669, type: 3}
@@ -5213,6 +5224,34 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1177650280}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 307736274}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnemyNearby
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BearBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900573107380151605, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
+      propertyPath: _event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5900573107380151606, guid: c0b550fc512017546accaef0eb1a98a4, type: 3}
       propertyPath: m_RootOrder
       value: 3

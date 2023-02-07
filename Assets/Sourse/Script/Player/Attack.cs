@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     [SerializeField] private AudioSource _audio;
 
     private int _damage = 1;
-    private const string _atackTriger = "Atack";
+    private const string _attackTrigger = "Atack";
 
     private void Start()
     {
@@ -21,13 +21,13 @@ public class Attack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _animator.SetTrigger(_atackTriger);
+            _animator.SetTrigger(_attackTrigger);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<EnemyHealt>(out EnemyHealt enemy))
+        if (collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemy))
         {
             _audio.Play();
             enemy.TakeDamage(_damage);

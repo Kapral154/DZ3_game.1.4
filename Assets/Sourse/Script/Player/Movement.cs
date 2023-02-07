@@ -12,17 +12,17 @@ public class Movement : MonoBehaviour
     private const string _jumpTriger = "Jump2";
     private float _speed = 4;
     private float _jumpForse = 5f;
-    private float _moveInput;
+    private float _movementSpeed;
     private bool _isGround;
 
     private void Update()
     {
-        _moveInput = Input.GetAxis("Horizontal");
-        Reversal(_moveInput);
+        _movementSpeed = Input.GetAxis("Horizontal");
+        Reversal(_movementSpeed);
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
         {          
-            _rigidbody2D.velocity = new Vector2(_moveInput * _speed, _rigidbody2D.velocity.y);           
+            _rigidbody2D.velocity = new Vector2(_movementSpeed * _speed, _rigidbody2D.velocity.y);           
             _animator.SetBool(_isRun, true);
         }
         else
