@@ -13,7 +13,7 @@ public class BearBehavior : MonoBehaviour
     private Transform[] _points;
     private float _sped = 2;
     private int _curentPoint;
-    private bool _isAggression = false;
+    private bool _isAggressiveState = false;
     private string _aggressionBool = "isAggression";
     private string _attackTriger = "Attack";
 
@@ -30,9 +30,9 @@ public class BearBehavior : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetBool(_aggressionBool, _isAggression);
+        _animator.SetBool(_aggressionBool, _isAggressiveState);
 
-        if (_isAggression)
+        if (_isAggressiveState)
         {
             AttackEnemy();
             return;
@@ -69,7 +69,7 @@ public class BearBehavior : MonoBehaviour
     {   
         while (true)
         {
-            if (_isAggression)
+            if (_isAggressiveState)
             {
                 _animator.SetTrigger(_attackTriger);                
             }
@@ -77,8 +77,8 @@ public class BearBehavior : MonoBehaviour
         }
     }
 
-    public void EnemyNearby(bool isNearby)
+    public void ChangeStateAggression(bool isAggressive)
     {
-        _isAggression = isNearby;
+        _isAggressiveState = isAggressive;
     }
 }

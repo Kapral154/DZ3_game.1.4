@@ -31,7 +31,6 @@ public class Attack : MonoBehaviour
         {
             _audio.Play();
             enemy.TakeDamage(_damage);
-            Debug.Log("damage");
         }
     }
 }
